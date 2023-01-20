@@ -12,30 +12,22 @@
           >
       </v-text-field>
       </div>
-        <button class="btn-pay tw-p-2.5 tw-w-24 tw-text-base tw-font-semibold"
+        <button @click="togglePaymentStatus" class="btn-pay tw-p-2.5 tw-w-24 tw-text-base tw-font-semibold"
         >PAY DUES</button>
       </div>
       
       <v-data-table
           v-model="selected"
           :headers="headers"
+          sort-by="email"
           :items="payments"
           :single-select="singleSelect"
           item-key="name"
-          show-default-footer
+          show-footer
           show-select
           show-expand
           class=" tw-rounded-lg"
       >
-      <!-- <template #[`item.data-table-expand`]="{ item }">
-        <div class="">
-          <div class="">{{item.name}}</div>
-         
-        
-
-        </div>
-      </template> -->
-      
       <template #[`item.name`]="{ item }">
         <div class="tw-w-48 tw-py-2">
           <div class="item-name text-red-600 md:tw-text-sm md:tw-font-medium">{{item.name}}</div>
@@ -86,7 +78,6 @@
         </div>
       </template>
       <template v-slot:expanded-item="{ item, headers }">
-        <!-- <v-icon>mdi-arrow-bottom-circle-outline</v-icon> -->
         <td style="background-color:'#E5E5E5;'" :colspan="headers.length">
       <ExpandedComponent v-for="(data,i) in item.transactionDetails" :key="i" :item="data" />
           <hr/>
@@ -114,6 +105,11 @@ export default {
     data: Array,
     singleExpand: Boolean,
     singleSelect: Boolean,
+  },
+  methods:{
+    togglePaymentStatus(){
+
+    }
   },
   watch:{
     data:{
@@ -226,7 +222,6 @@ font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 15px;
-
 color: #4A4AFF;
 }
 .last-login{
@@ -254,13 +249,19 @@ color: #6E6893;
   border-radius: 6px;
   align-items: center;
 }
+.filter:hover{
+  border: 1px solid #6D5BD0;
+  box-shadow: 0px 0px 3px #6D5BD0;
+}
 .input {
   margin-left: 20px;
   // margin-right: 460px;
   border: none;
   background: #F4F2FF;
   border-radius: 6px;
- 
+}
+.input:hover{
+  border: 1px solid #6D5BD0;
 }
 .btn-pay {
   background: #6D5BD0;

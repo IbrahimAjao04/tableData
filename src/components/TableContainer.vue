@@ -102,7 +102,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .wrapper-card {
-  width: 1300px;
+  //width: 1300px;
   height: 100vh;
   margin: auto;
   background-color: #e5e5e5;
