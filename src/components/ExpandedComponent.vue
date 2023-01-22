@@ -1,19 +1,20 @@
 <template>
+  <div>
 <div  class="expanded-content tw-px-24 tw-py-2 tw-flex tw-justify-between ">
     <div>
-        <h2>DATE</h2>
+        <h2 v-if="showHeader" class="tw-mb-4">DATE</h2>
         <h4 class="date">{{item.date}}</h4>
     </div>
     <div>
-      <h2>USER ACTIVITY</h2>
+      <h2 v-if="showHeader" class="tw-mb-4">USER ACTIVITY</h2>
       <h4 class="user-activity">{{item.userActivities}}</h4>
 
     </div>
     <div>
-      <h2>DETAIL</h2>
+      <span v-if="showHeader" class="detail tw-pb-4">DETAIL <v-icon>mdi-alert-circle-outline</v-icon></span>
       <h4 class="details" v-html="item.details"></h4>
     </div>
-    
+  </div> 
 </div>
 
 </template>
@@ -24,7 +25,8 @@ export default{
     props:{
         item:{
             type:Object
-        }
+        },
+        showHeader:Boolean
     }
 }
 </script>
@@ -32,7 +34,6 @@ export default{
 .expanded-content{
   border-top: 0.5px solid #F4F2FF;
   border-bottom: 0.5px solid #F4F2FF;
-
 }
 h2{
   font-style: normal;
@@ -64,5 +65,15 @@ h2{
   font-size: 14px;
   line-height: 17px;
   color: #25213B;
+}
+.detail{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6E6893;
+
 }
 </style>

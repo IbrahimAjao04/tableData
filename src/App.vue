@@ -1,5 +1,5 @@
 <template>
-  <div class="app-div">
+  <div class="app-div tw-pb-4">
     <TableContainer/>
   </div>
 </template>
@@ -22,7 +22,8 @@ export default {
 .app-div{
   background: #E5E5E5;
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
+  height: fit-content;
 }
 .theme--light.v-tabs > .v-tabs-bar{
   background-color: #E5E5E5 !important;

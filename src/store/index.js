@@ -54,7 +54,7 @@ export default new Vuex.Store({
         {
           name: 'Anika Rhiel Madsen',
           id:2,
-          email:   'ajaoibra@gmail',
+          email:   'tomandjerry@gmail.com',
           status: 'Inactive',
           lastLogin: 'Last login: 14/Apr/2022',
           paymentStatus: 'Unpaid',
@@ -138,12 +138,12 @@ export default new Vuex.Store({
         },
         {
           name: 'Erin Levin',
-          id:4,
-          email:   'home@email.com',
+          id: 4,
+          email: 'home@email.com',
           status: 'Inactive',
           lastLogin: 'Last login: 14/Apr/2022',
-          paymentStatus: 'Paid',
-           paymentDate: 'Paid on 15/APR/2020',
+          paymentStatus: 'Unpaid',
+           paymentDate: 'Dews on 15/APR/2020',
            amount: '$200',
            currency: 'USD',
             transactionDetails:[
@@ -176,26 +176,233 @@ export default new Vuex.Store({
                 },
             ]
         },
-       
+        {
+          name: 'Ibrahim Ajao',
+          id: 5,
+          email: 'ajaoibra@gmail.com',
+          status: 'Active',
+          lastLogin: 'Last login: 14/APR/2020',
+          paymentStatus: 'Paid',
+          paymentDate: 'Paid on 15/APR/2020',
+          amount: '$1000',
+          currency: 'USD',
+          transactionDetails: [
+            {
+              date:'12-APR-2012',
+              userActivities:'Vue UI framework',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+          },
+          {
+              date:'10-APR-2012',
+              userActivities:'Vue UI framework',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+          },
+          {
+              date:'08-APR-2012',
+              userActivities:'Vue UI framework',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+          },
+          {
+              date:'08-APR-2012',
+              userActivities:'Vue UI framework',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+          },
+          {
+              date:'04-APR-2012',
+              userActivities:'Vue UI framework',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+          },
+          ]
+        },
+        {
+          name: 'Jaxson Siphron',
+          id: 6,
+          email: 'w3school@gmail.com',
+          status: 'Inactive',
+          lastLogin: 'Last login: 14/APR/2020',
+          paymentStatus: 'Paid',
+          paymentDate: 'Paid on 15/APR/2020',
+          amount: '$600',
+          currency: 'USD',
+          transactionDetails: [
+            {
+              date:'12-APR-2012',
+              userActivities:'Tailwind is awesome',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+
+          },
+          {
+              date:'10-APR-2012',
+              userActivities:'Tailwind is awesome',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+
+          },
+          {
+              date:'08-APR-2012',
+              userActivities:'Tailwind is awesome',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+
+          },
+          {
+              date:'08-APR-2012',
+              userActivities:'Tailwind is awesome',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+          },
+          {
+              date:'04-APR-2012',
+              userActivities:'Tailwind is awesome',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+
+          },          ]
+        },
+        {
+          name: 'Mira Levin',
+          id: 7,
+          email: 'vuetify@gmail.com',
+          status: 'Inactive',
+          lastLogin: 'Last login: 14/APR/2020',
+          paymentStatus: 'Paid',
+          paymentDate: 'Dues on 15/APR/2020',
+          amount: '$300',
+          currency: 'USD',
+          transactionDetails: [
             
-           
-       
-             
-               
-             
-       
-        
-       
-       
-    
+          ]
+        },
+        {
+          name: 'Lincon Levin',
+          id: 8,
+          email: 'royalpower@gmail.com',
+          status: 'Active',
+          lastLogin: 'Last login: 14/APR/2020',
+          paymentStatus: 'Paid',
+          paymentDate: '15/APR/2020',
+          amount: '$500',
+          currency: 'USD',
+          transactionDetails: [
+            {
+              date:'12-APR-2012',
+              userActivities:'Tailwind is awesome',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+
+          },
+          {
+              date:'10-APR-2012',
+              userActivities:'Tailwind is awesome',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+
+          },
+          {
+              date:'08-APR-2012',
+              userActivities:'Tailwind is awesome',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+
+          },
+          {
+              date:'08-APR-2012',
+              userActivities:'Tailwind is awesome',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+          },
+          {
+              date:'04-APR-2012',
+              userActivities:'Tailwind is awesome',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+
+          },          ]
+        },
+        {
+          name: 'Philip Saris',
+          id: 9,
+          email: 'scelloo@gmail.com',
+          status: 'Inactive',
+          lastLogin: 'Last login: 14/APR/2020',
+          paymentStatus: 'Unpaid',
+          paymentDate: 'Dues on 15/APR/2020',
+          amount: '$500',
+          currency: 'USD',
+          transactionDetails: [
+            {
+              date:'12-APR-2012',
+              userActivities:'Vuetify is awesome',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+
+          },
+          {
+              date:'10-APR-2012',
+              userActivities:'Vuetify is awesome',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+
+          },
+          {
+              date:'08-APR-2012',
+              userActivities:'Vuetify is awesome',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+
+          },
+          {
+              date:'08-APR-2012',
+              userActivities:'Vuetify is awesome',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+          },
+          {
+              date:'04-APR-2012',
+              userActivities:'Vuetify is awesome',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+          },
+          ]
+        },
+        {
+          name: 'Cheyenne Ekstrom Bothman',
+          id: 10,
+          email: 'programmer@gmail.com',
+          status: 'Inactive',
+          lastLogin: 'Last login:14/APR/2010',
+          paymentStatus: 'Paid',
+          paymentDate: 'Paid On 15/APR/2010',
+          amount: '$500',
+          currency: 'USD',
+          transactionDetails: [
+            {
+              date:'12-APR-2012',
+              userActivities:'Vue UI framework',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+
+          },
+          {
+              date:'10-APR-2012',
+              userActivities:'Vue UI framework',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+
+          },
+          {
+              date:'08-APR-2012',
+              userActivities:'Vue UI framework',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+
+          },
+          {
+              date:'08-APR-2012',
+              userActivities:'Vue UI framework',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+          },
+          {
+              date:'04-APR-2012',
+              userActivities:'Vue UI framework',
+              details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
+
+          },
+          ]
+        }
     ],
-    filteredPayment:[]
+  filteredPayment:[]
   },
+
   getters: {
     getPaymentData(state){
       return state.filteredPayment
     }
   },
+
   mutations: {
     SET_PAYMENT_DATA(state,data){
       state.filteredPayment= data
@@ -208,6 +415,7 @@ export default new Vuex.Store({
 
     }
   },
+
   actions: {
     getAllPaymentData({commit,state},payload){
       let filterPayment =[]
@@ -216,7 +424,7 @@ export default new Vuex.Store({
       }
       else{
       filterPayment = state.paymentData.filter(item=>item.paymentStatus===payload.status)
-console.log('filterPayment', filterPayment)
+        console.log('filterPayment', filterPayment)
       }
       commit('SET_PAYMENT_DATA',filterPayment)
     },

@@ -20,7 +20,7 @@
           <v-spacer></v-spacer>
         <div class="amount tw-flex justify-end">
           <label class="tw-text-sm tw-font-medium">Total payable amount: </label>
-          <span class="tw-flex tw-ml-1 tw-text-sm tw-font-medium">$900.00 <p class="tw-ml-1">USD</p></span>
+          <span class="tw-flex tw-ml-1 tw-text-sm tw-font-medium">$4200.00 <p class="tw-ml-1">USD</p></span>
         </div>
 
         <v-tab-item>
@@ -105,21 +105,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.wrapper-card {
-  //width: 1300px;
-  height: 100vh;
-  margin: auto;
-  background-color: #e5e5e5;
-  background-size: auto;
-  background-repeat: no-repeat;
-}
-
 .header{
   width: 75%;
   margin: auto;
   background: #E5E5E5;
 }
-
 .table-heading {
   font-size: 14px;
   line-height: 17px;
@@ -139,7 +129,6 @@ export default {
   background: #E5E5E5;
 }
 .amount{
-  // width: 950px;
   font-size: 14px;
   color: #6E6893;
   display: flex;
@@ -151,9 +140,7 @@ export default {
 }
 .amount span p{
   color: #6E6893;
-
 }
-
 .filter {
   font-weight: 400;
   font-size: 16px;
@@ -174,14 +161,8 @@ export default {
   font-size: 12px;
   font-weight: 400;
 }
-
-
-
 .content-card {
-  //width: 1100px;
   margin: auto;
 }
-
-
 
 </style>

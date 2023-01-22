@@ -28,11 +28,6 @@
           show-expand
           class=" tw-rounded-lg"
       >
-      
-      <!-- <template v-slot:[`item.data-table-expand`]>
-      <div>arrow</div>
-        <v-icon>mdi-arrow-bottom-drop-circle-outline</v-icon>
-      </template> -->
       <template #[`item.name`]="{ item }">
         <div class="tw-w-48 tw-py-2">
           <div class="item-name text-red-600 md:tw-text-sm md:tw-font-medium">{{item.name}}</div>
@@ -83,9 +78,15 @@
         </div>
       </template>
       <template v-slot:expanded-item="{ item, headers }">
-        <td style="background-color:#E5E5E5;" :colspan="headers.length">
-      <ExpandedComponent v-for="(data,i) in item.transactionDetails" :key="i" :item="data" />
+        <td v-if="item.transactionDetails.length" style="background-color:#E5E5E5;" :colspan="headers.length">
+      <ExpandedComponent  :showHeader="(i===0)" v-for="(data,i) in item.transactionDetails" :key="i" :item="data" />
+     
           <hr/>
+        </td>
+        <td v-else :colspan="headers.length">
+          <div class="tw-flex tw-justify-center tw-text-4xl">
+        No Transaction Found  
+      </div>
         </td>
     </template>
       </v-data-table>
