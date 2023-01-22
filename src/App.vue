@@ -42,4 +42,7 @@ export default {
   box-shadow: none !important;
   background: #E5E5E5 !important;
 }
+.v-data-footer{
+  justify-content: end !important;
+}
 </style>

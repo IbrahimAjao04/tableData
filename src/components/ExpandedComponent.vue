@@ -1,5 +1,5 @@
 <template>
-<div  class="expanded-content tw-flex tw-justify-between ">
+<div  class="expanded-content tw-px-24 tw-py-2 tw-flex tw-justify-between ">
     <div>
         <h2>DATE</h2>
         <h4 class="date">{{item.date}}</h4>
@@ -11,10 +11,9 @@
     </div>
     <div>
       <h2>DETAIL</h2>
-      <h4 class="details" v-html="item.details">{{item.details}}</h4>
+      <h4 class="details" v-html="item.details"></h4>
     </div>
     
-<!--    {{item.message}}-->
 </div>
 
 </template>
@@ -31,7 +30,9 @@ export default{
 </script>
 <style scoped lang="scss">
 .expanded-content{
-    border: 1px solid #6E6893;
+  border-top: 0.5px solid #F4F2FF;
+  border-bottom: 0.5px solid #F4F2FF;
+
 }
 h2{
   font-style: normal;

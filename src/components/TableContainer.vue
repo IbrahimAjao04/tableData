@@ -1,10 +1,9 @@
 <template>
   <div class="header">
     <div class="table-heading">TABLE HEADING</div>
-<!--    <div style="display: flex; justify-content: space-between;">-->
       <v-tabs
           align-with-title
-          class="tabs-and-amount"
+          class="tabs-and-amount "
       >
         <v-tabs-slider color="#25213b"></v-tabs-slider>
         <v-tab
@@ -18,6 +17,12 @@
           {{ item }}
 
         </v-tab>
+          <v-spacer></v-spacer>
+        <div class="amount tw-flex justify-end">
+          <label class="tw-text-sm tw-font-medium">Total payable amount: </label>
+          <span class="tw-flex tw-ml-1 tw-text-sm tw-font-medium">$900.00 <p class="tw-ml-1">USD</p></span>
+        </div>
+
         <v-tab-item>
           <TableData :data="getPaymentData"
                      :headers="headers"
@@ -47,8 +52,7 @@
           />
         </v-tab-item>
       </v-tabs>
-<!--      <div class="amount"> Total payable amount: $900.00 USD</div>-->
-<!--    </div>-->
+
   </div>
 </template>
 
@@ -61,7 +65,7 @@ export default {
   components: {TableData},
   data() {
     return {
-      singleSelect: false,
+      singleSelect: true,
       selected: [],
       expanded: true,
       singleExpand: false,
@@ -134,14 +138,20 @@ export default {
 .tabs{
   background: #E5E5E5;
 }
-.amount {
-  width: 275px;
+.amount{
+  // width: 950px;
   font-size: 14px;
   color: #6E6893;
   display: flex;
   justify-content: end;
-  //margin-left: 450px;
-  margin-bottom: -20px;
+  margin-bottom: -70px !important;
+}
+.amount span{
+  color: #6D5BD0;
+}
+.amount span p{
+  color: #6E6893;
+
 }
 
 .filter {

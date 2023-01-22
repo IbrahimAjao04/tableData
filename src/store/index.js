@@ -9,6 +9,7 @@ export default new Vuex.Store({
     
         {
           name: 'Justin Septimus' ,
+          id:1,
            email:   'example@email.com',
            status: 'Active',
            lastLogin: 'Last login: 14/Apr/2022',
@@ -52,6 +53,7 @@ export default new Vuex.Store({
         },
         {
           name: 'Anika Rhiel Madsen',
+          id:2,
           email:   'ajaoibra@gmail',
           status: 'Inactive',
           lastLogin: 'Last login: 14/Apr/2022',
@@ -93,6 +95,7 @@ export default new Vuex.Store({
         },
         {
           name: 'Miracle Vaccaro',
+          id:3,
           email:   'example@email.com',
           status: 'Active',
           lastLogin: 'Last login: 14/Apr/2022',
@@ -135,6 +138,7 @@ export default new Vuex.Store({
         },
         {
           name: 'Erin Levin',
+          id:4,
           email:   'home@email.com',
           status: 'Inactive',
           lastLogin: 'Last login: 14/Apr/2022',
@@ -173,6 +177,16 @@ export default new Vuex.Store({
             ]
         },
        
+            
+           
+       
+             
+               
+             
+       
+        
+       
+       
     
     ],
     filteredPayment:[]
@@ -185,11 +199,17 @@ export default new Vuex.Store({
   mutations: {
     SET_PAYMENT_DATA(state,data){
       state.filteredPayment= data
+    },
+    UPDATE_PAYMENT_DETAILS(state,data){
+    let index  = state.paymentData.findIndex(item=> item.id === data.id)  
+    if(index !== -1){
+      state.paymentData[index].paymentStatus = 'Paid'
+    }
+
     }
   },
   actions: {
     getAllPaymentData({commit,state},payload){
-      console.log('payload', payload)
       let filterPayment =[]
       if(payload.status === 'All'){
         filterPayment = state.paymentData 
@@ -199,8 +219,12 @@ export default new Vuex.Store({
 console.log('filterPayment', filterPayment)
       }
       commit('SET_PAYMENT_DATA',filterPayment)
-    }
+    },
+    payDues({commit},payload){
+        commit('UPDATE_PAYMENT_DETAILS',payload)
+    
   },
+},
   modules: {
   }
 })

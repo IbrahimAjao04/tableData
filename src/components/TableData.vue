@@ -12,22 +12,27 @@
           >
       </v-text-field>
       </div>
-        <button @click="togglePaymentStatus" class="btn-pay tw-p-2.5 tw-w-24 tw-text-base tw-font-semibold"
+        <button v-if="(selected.length && selected[0].paymentStatus === 'Unpaid' || !selected.length)" @click="togglePaymentStatus" class="btn-pay tw-p-2.5 tw-w-24 tw-text-base tw-font-semibold"
         >PAY DUES</button>
       </div>
       
       <v-data-table
           v-model="selected"
           :headers="headers"
-          sort-by="email"
           :items="payments"
           :single-select="singleSelect"
-          item-key="name"
-          show-footer
+          item-key="id"
+          :single-expand="singleExpand"
+          sort-by="email"
           show-select
           show-expand
           class=" tw-rounded-lg"
       >
+      
+      <!-- <template v-slot:[`item.data-table-expand`]>
+      <div>arrow</div>
+        <v-icon>mdi-arrow-bottom-drop-circle-outline</v-icon>
+      </template> -->
       <template #[`item.name`]="{ item }">
         <div class="tw-w-48 tw-py-2">
           <div class="item-name text-red-600 md:tw-text-sm md:tw-font-medium">{{item.name}}</div>
@@ -78,7 +83,7 @@
         </div>
       </template>
       <template v-slot:expanded-item="{ item, headers }">
-        <td style="background-color:'#E5E5E5;'" :colspan="headers.length">
+        <td style="background-color:#E5E5E5;" :colspan="headers.length">
       <ExpandedComponent v-for="(data,i) in item.transactionDetails" :key="i" :item="data" />
           <hr/>
         </td>
@@ -108,7 +113,8 @@ export default {
   },
   methods:{
     togglePaymentStatus(){
-
+      if(this.selected.length)
+      this.$store.dispatch('payDues',this.selected[0])
     }
   },
   watch:{
@@ -121,7 +127,8 @@ export default {
     },
     search:function(val){
       this.payments = [...this.data.filter(item=>item.name.toLowerCase().indexOf(val.toLowerCase()) !== -1 || item.email.toLowerCase().indexOf(val.toLowerCase()) !== -1 )]
-    }
+    },
+   
   }
 }
 </script>
