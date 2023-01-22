@@ -21,9 +21,10 @@ export default {
 <style lang="scss" >
 .app-div{
   background: #E5E5E5;
+  background-size: cover;
   width: 100%;
-  // height: 100vh;
-  height: fit-content;
+  height: 100vh;
+  // height: fit-content;
 }
 .theme--light.v-tabs > .v-tabs-bar{
   background-color: #E5E5E5 !important;

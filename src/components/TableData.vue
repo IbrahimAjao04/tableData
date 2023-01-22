@@ -12,7 +12,7 @@
           >
       </v-text-field>
       </div>
-        <button v-if="(selected.length && selected[0].paymentStatus === 'Unpaid' || !selected.length)" @click="togglePaymentStatus" class="btn-pay tw-p-2.5 tw-w-24 tw-text-base tw-font-semibold"
+        <button v-if="(selected.length && selected[0].paymentStatus === 'Unpaid' || !selected.length)" @click="togglePaymentStatus" class="btn-pay tw-p-2.5 tw-text-base tw-font-semibold"
         >PAY DUES</button>
       </div>
       
@@ -84,8 +84,9 @@
           <hr/>
         </td>
         <td v-else :colspan="headers.length">
-          <div class="tw-flex tw-justify-center tw-text-4xl">
-        No Transaction Found  
+          <div class="no-records tw-flex tw-justify-center tw-font-semibold
+          tw-text-base tw-tracking-wider tw-not-italic">
+        NO RECORDS FOUND  
       </div>
         </td>
     </template>
@@ -135,6 +136,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.no-records{
+  color: #6E6893;
+}
 .view-more{
 font-style: normal;
 font-weight: 500;
