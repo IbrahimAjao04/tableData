@@ -1,7 +1,9 @@
 <template>
+  <div class="wrapper">
   <div class="app-div tw-pb-4">
     <TableContainer/>
   </div>
+</div>
 </template>
 
 <script>
@@ -19,12 +21,16 @@ export default {
 };
 </script>
 <style lang="scss" >
+.wrapper{
+  background: #E5E5E5;
+  background-size: cover;
+  height: 100vh;
+}
 .app-div{
   background: #E5E5E5;
   background-size: cover;
   width: 100%;
-  height: 100vh;
-  // height: fit-content;
+  height: auto;
 }
 .theme--light.v-tabs > .v-tabs-bar{
   background-color: #E5E5E5 !important;
