@@ -6,7 +6,6 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     paymentData:[
-    
         {
           name: 'Justin Septimus' ,
           id:1,
@@ -49,7 +48,6 @@ export default new Vuex.Store({
 
                },
            ]
-          
         },
         {
           name: 'Anika Rhiel Madsen',
@@ -66,7 +64,6 @@ export default new Vuex.Store({
                     date:'12-APR-2012',
                     userActivities:'Vue is awesome',
                     details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
                 },
                 {
                     date:'10-APR-2012',
@@ -77,19 +74,16 @@ export default new Vuex.Store({
                     date:'08-APR-2012',
                     userActivities:'Vue is awesome',
                     details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
                 },
                 {
                     date:'08-APR-2012',
                     userActivities:'Vue is awesome',
                     details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
                 },
                 {
                     date:'04-APR-2012',
                     userActivities:'Vue is awesome',
                     details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
                 },
             ]
         },
@@ -108,19 +102,16 @@ export default new Vuex.Store({
                     date:'12-APR-2012',
                     userActivities:'Tailwind is awesome',
                     details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
                 },
                 {
                     date:'10-APR-2012',
                     userActivities:'Tailwind is awesome',
                     details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
                 },
                 {
                     date:'08-APR-2012',
                     userActivities:'Tailwind is awesome',
                     details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
                 },
                 {
                     date:'08-APR-2012',
@@ -131,10 +122,8 @@ export default new Vuex.Store({
                     date:'04-APR-2012',
                     userActivities:'Tailwind is awesome',
                     details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
                 },
             ]
-
         },
         {
           name: 'Erin Levin',
@@ -156,7 +145,6 @@ export default new Vuex.Store({
                     date:'10-APR-2012',
                     userActivities:'Vue is awesome',
                     details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
                 },
                 {
                     date:'08-APR-2012',
@@ -172,7 +160,6 @@ export default new Vuex.Store({
                     date:'04-APR-2012',
                     userActivities:'Vue is awesome',
                     details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
                 },
             ]
         },
@@ -229,19 +216,16 @@ export default new Vuex.Store({
               date:'12-APR-2012',
               userActivities:'Tailwind is awesome',
               details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
           },
           {
               date:'10-APR-2012',
               userActivities:'Tailwind is awesome',
               details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
           },
           {
               date:'08-APR-2012',
               userActivities:'Tailwind is awesome',
               details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
           },
           {
               date:'08-APR-2012',
@@ -252,8 +236,8 @@ export default new Vuex.Store({
               date:'04-APR-2012',
               userActivities:'Tailwind is awesome',
               details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
-          },          ]
+          },
+        ]
         },
         {
           name: 'Mira Levin',
@@ -265,8 +249,7 @@ export default new Vuex.Store({
           paymentDate: 'Dues on 15/APR/2020',
           amount: '$300',
           currency: 'USD',
-          transactionDetails: [
-            
+          transactionDetails: [ 
           ]
         },
         {
@@ -276,7 +259,7 @@ export default new Vuex.Store({
           status: 'Active',
           lastLogin: 'Last login: 14/APR/2020',
           paymentStatus: 'Paid',
-          paymentDate: '15/APR/2020',
+          paymentDate: 'Paid on 15/APR/2020',
           amount: '$500',
           currency: 'USD',
           transactionDetails: [
@@ -284,19 +267,16 @@ export default new Vuex.Store({
               date:'12-APR-2012',
               userActivities:'Tailwind is awesome',
               details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
           },
           {
               date:'10-APR-2012',
               userActivities:'Tailwind is awesome',
               details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
           },
           {
               date:'08-APR-2012',
               userActivities:'Tailwind is awesome',
               details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
           },
           {
               date:'08-APR-2012',
@@ -307,7 +287,6 @@ export default new Vuex.Store({
               date:'04-APR-2012',
               userActivities:'Tailwind is awesome',
               details:'<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper <br>morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.</h4>',
-
           },          ]
         },
         {

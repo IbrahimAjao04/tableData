@@ -80,10 +80,16 @@
       <template v-slot:expanded-item="{ item, headers }">
         <td v-if="item.transactionDetails.length" style="background-color:#E5E5E5;" :colspan="headers.length">
       <ExpandedComponent  :showHeader="(i===0)" v-for="(data,i) in item.transactionDetails" :key="i" :item="data" />
-     
+
           <hr/>
         </td>
         <td v-else :colspan="headers.length">
+          <div class="no-record-header tw-my-3 tw-flex tw-justify-center tw-w-4/5 tw-m-auto">
+          <span class="tw-w-60">Date</span>
+          <span class="tw-w-60">UserActivity</span>
+          <span class="tw-flex tw-items-center">Detail 
+            <v-icon class="alert-icon">mdi-alert-circle-outline</v-icon></span>
+        </div>
           <div class="no-records tw-flex tw-justify-center tw-font-semibold
           tw-text-base tw-tracking-wider tw-not-italic">
         NO RECORDS FOUND  
@@ -136,6 +142,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.alert-icon{
+  color: #8b83ba;
+}
+.no-record-header{
+  color: #6E6893;
+}
+.no-record-header span{
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
 .no-records{
   color: #6E6893;
 }
